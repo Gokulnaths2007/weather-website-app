@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-card">
+        <h1>Weather App</h1>
+        <p>Check the weather in your city</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="message">Enter a city to check its weather.</p>
+
+        
+<div id="forecastSection" class="hidden">
+    <h2>Hourly Forecast</h2>
+    <div id="hourlyForecast" class="hourly-list"></div>
+
+    <h2>7-Day Forecast</h2>
+    <div id="dailyForecast" class="daily-list"></div>
+
+    <h2>More Weather Details</h2>
+    <div class="extra-details">
+        <p>🌡️ Feels Like: <span id="feelsLike"></span></p>
+        <p>🌅 Sunrise: <span id="sunrise"></span></p>
+        <p>🌇 Sunset: <span id="sunset"></span></p>
+        <p>☀️ UV Index: <span id="uvIndex"></span></p>
+    </div>
+</div>
+
+        <div id="weatherInfo" class="hidden">
+            <h2 id="cityName"></h2>
+            <div id="weatherIcon">🌤️</div>
+            <h3 id="temperature"></h3>
+            <p id="description"></p>
+            <div class="details">
+                <p>💧 Humidity: <span id="humidity"></span></p>
+                <p>💨 Wind: <span id="wind"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
